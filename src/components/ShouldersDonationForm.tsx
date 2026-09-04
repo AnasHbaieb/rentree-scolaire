@@ -31,14 +31,14 @@ export const ShouldersDonationForm = ({ onBack }: { onBack: () => void }) => {
           >
             <Building2 className="h-10 w-10 mx-auto mb-3 text-primary" />
             <p className="font-bold text-lg mb-1">سآتي للمقر</p>
-            <p className="text-sm text-muted-foreground">ساقية الدائر - من 10:00 إلى المغرب</p>
+            <p className="text-sm text-muted-foreground">ساقية الدائر</p>
           </button>
           <button
             onClick={() => setMethod("home")}
             className="rounded-2xl border-2 border-border p-6 text-center hover:border-primary hover:bg-primary/5 transition-all"
           >
             <Home className="h-10 w-10 mx-auto mb-3 text-primary" />
-            <p className="font-bold text-lg mb-1">تعالوا خذوها مني</p>
+            <p className="font-bold text-lg mb-1">تعالوا خذوا الأدوات</p>
             <p className="text-sm text-muted-foreground">في نطاق 10 كم من ساقية الدائر</p>
           </button>
         </div>
