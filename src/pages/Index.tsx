@@ -13,20 +13,20 @@ import heroSchoolAsset from "@/assets/hero-school.jpg.asset.json";
 const heroImage = heroSchoolAsset.url;
 
 const GOAL = 30000;
-const SHOULDERS_GOAL = 100;
+
 
 const Index = () => {
   const [open, setOpen] = useState(false);
   const [initialTrack, setInitialTrack] = useState<"financial" | "shoulders" | null>(null);
   const [total, setTotal] = useState(0);
-  const [shouldersCount, setShouldersCount] = useState(0);
+
 
   const fetchTotal = async () => {
     const { data, error } = await supabase.rpc("get_donation_total");
     if (!error && data && data.length > 0) {
       setTotal(Number(data[0].total_amount) || 0);
-      setShouldersCount(Number((data[0] as any).shoulders_count) || 0);
     }
+
   };
 
   useEffect(() => {
@@ -47,7 +47,7 @@ const Index = () => {
   }, []);
 
   const percentage = Math.min((total / GOAL) * 100, 100);
-  const shouldersPercentage = Math.min((shouldersCount / SHOULDERS_GOAL) * 100, 100);
+
 
   const openWith = (track: "financial" | "shoulders") => {
     setInitialTrack(track);
@@ -115,20 +115,6 @@ const Index = () => {
                 </div>
               </div>
 
-              {/* Shoulders Progress */}
-              <div className="space-y-2 pt-2">
-                <div className="flex items-baseline justify-between">
-                  <span className="text-sm text-muted-foreground">صدقات الأكتاف</span>
-                  <span className="text-2xl font-bold text-secondary">
-                    {shouldersCount.toLocaleString("ar-TN")} / {SHOULDERS_GOAL}
-                  </span>
-                </div>
-                <Progress value={shouldersPercentage} className="h-3" />
-                <div className="flex items-center justify-between text-xs text-muted-foreground">
-                  <span>{shouldersPercentage.toFixed(1)}% من الهدف</span>
-                  <span>الهدف: {SHOULDERS_GOAL} صدقة</span>
-                </div>
-              </div>
 
               {/* CTAs */}
               <div className="flex flex-col sm:flex-row gap-3 pt-3">
