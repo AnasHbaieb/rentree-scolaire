@@ -115,20 +115,6 @@ const Index = () => {
                 </div>
               </div>
 
-              {/* Shoulders Progress */}
-              <div className="space-y-2 pt-2">
-                <div className="flex items-baseline justify-between">
-                  <span className="text-sm text-muted-foreground">صدقات الأكتاف</span>
-                  <span className="text-2xl font-bold text-secondary">
-                    {shouldersCount.toLocaleString("ar-TN")} / {SHOULDERS_GOAL}
-                  </span>
-                </div>
-                <Progress value={shouldersPercentage} className="h-3" />
-                <div className="flex items-center justify-between text-xs text-muted-foreground">
-                  <span>{shouldersPercentage.toFixed(1)}% من الهدف</span>
-                  <span>الهدف: {SHOULDERS_GOAL} صدقة</span>
-                </div>
-              </div>
 
               {/* CTAs */}
               <div className="flex flex-col sm:flex-row gap-3 pt-3">
