@@ -88,17 +88,15 @@ const Index = () => {
             {/* Text (right) */}
             <div className="order-2 lg:order-1 text-right space-y-5">
               <h1 className="font-arabic-display text-4xl sm:text-5xl lg:text-6xl font-bold text-primary leading-tight">
-                أُضْحِيَّتُنَا
+                أسهم الأمل
               </h1>
               <p className="text-lg text-secondary font-bold">
-                "​قال رسول الله ﷺ: «أَحَبُّ الأَعْمَالِ إِلَى اللَّهِ سُرُورٌ تُدْخِلُهُ عَلَى مُسْلِمٍ..» وعن الأضاحي أمرنا فقال: «أَطْعِمُوا»."
+                قال رسول الله صلى الله عليه وسلم: «وَاللَّهُ فِي عَوْنِ الْعَبْدِ مَا كَانَ الْعَبْدُ فِي عَوْنِ أَخِيهِ».
               </p>
               <p className="text-base text-foreground/80 leading-relaxed">
-                بفضل الله، ومع قرب عيد الأضحى المبارك، تطلق {" "}
-                <span className="font-bold">الجمعية الخيرية الكلمة الطيبة</span> مشروع{" "}
-                <span className="font-bold">"أُضْحِيَّتْنَا"</span> لتوفير أضاحي العيد وصدقات اللحوم للعائلات المعوزة والأيتام{" "}
-                يوم العيد.
-                <span className="font-bold">هدفنا جمع 30.000دينار وتوزيع 100 صدقة الاكتاف</span>
+                مع قرب العودة المدرسية، تطلق <span className="font-bold">الجمعية الخيرية الكلمة الطيبة</span> مشروع <span className="font-bold">"أسهم الأمل"</span> باش نوفرو المستلزمات والأدوات المدرسية لصغارنا من العائلات المعوزة.
+                <br />هدفنا: إعانة 280 تلميذاً (قيمة المساعدة الواحدة 100 دينار).
+                <br />تبرعك اليوم.. أملهم غداً.
               </p>
 
               {/* Progress */}
@@ -139,7 +137,7 @@ const Index = () => {
                   className="flex-1 bg-primary hover:bg-primary/90 text-primary-foreground text-base font-bold py-6 shadow-soft"
                 >
                   <Coins className="ml-2 h-5 w-5" />
-                  ساهم في أضحيتنا الآن
+                  مساهمة مالية
                 </Button>
                 <Button
                   onClick={() => openWith("shoulders")}
@@ -148,7 +146,7 @@ const Index = () => {
                   className="flex-1 border-2 border-secondary bg-secondary/10 hover:bg-secondary/20 text-foreground text-base font-bold py-6"
                 >
                   <HandHeart className="ml-2 h-5 w-5" />
-                  صدقة الأكتاف
+                  مساهمة عينية
                 </Button>
               </div>
             </div>
