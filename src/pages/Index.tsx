@@ -9,7 +9,8 @@ import { Progress } from "@/components/ui/progress";
 import { HandHeart, Coins } from "lucide-react";
 import { useEffect } from "react";
 import { supabase } from "@/integrations/supabase/client";
-import heroImage from "@/assets/hero-sheep.jpg";
+import heroSchoolAsset from "@/assets/hero-school.jpg.asset.json";
+const heroImage = heroSchoolAsset.url;
 
 const GOAL = 30000;
 const SHOULDERS_GOAL = 100;
