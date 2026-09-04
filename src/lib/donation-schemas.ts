@@ -3,7 +3,7 @@ import { z } from "zod";
 const phoneRegex = /^(\+?216)?\s?[2459]\d{7}$/;
 
 const baseFields = {
-  full_name: z.string().trim().min(2, "الاسم قصير برشة").max(100, "الاسم طويل برشة"),
+  full_name: z.string().trim().min(2, "الاسم قصير").max(100, "الاسم طويل برشة"),
   phone: z
     .string()
     .trim()
