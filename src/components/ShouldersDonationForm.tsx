@@ -86,7 +86,7 @@ const HeadquartersFlow = ({ onBack }: { onBack: () => void }) => {
           <MapPin className="h-5 w-5 text-secondary shrink-0 mt-0.5" />
           <div>
             <p className="font-bold text-foreground">مقر الجمعية: ساقية الدائر، صفاقس</p>
-            <p className="text-muted-foreground">يوم العيد من الساعة 10:00 إلى المغرب</p>
+            <p className="text-muted-foreground">{"\n"}</p>
           </div>
         </div>
       </div>
