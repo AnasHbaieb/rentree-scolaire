@@ -33,7 +33,7 @@ export const DonationDialog = ({
       <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto" dir="rtl">
         <DialogHeader>
           <DialogTitle className="text-2xl font-arabic-display text-primary">
-            أُضْحِيَّتْنَا
+            أسهم الأمل
           </DialogTitle>
         </DialogHeader>
 
