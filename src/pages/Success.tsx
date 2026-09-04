@@ -27,11 +27,11 @@ const Success = () => {
             بارك الله في رزقك 🤲
           </h1>
           <p className="text-base sm:text-lg text-foreground/80 leading-loose">
-            مساهمتك في <strong className="text-primary">(أُضْحِيَّتْنَا)</strong> وصلت لجمعية الكلمة الطيبة.
+            مساهمتك في <strong className="text-primary">(أسهم الأمل)</strong> وصلت لجمعية الكلمة الطيبة.
             <br />
             فريق الإدارة سيتصل بك قريباً لتنسيق الاستلام.
           </p>
-          <p className="mt-6 text-xl font-bold text-secondary">عيدكم مبروك مسبقاً! 🌙</p>
+          <p className="mt-6 text-xl font-bold text-secondary"></p>
           <Link to="/">
             <Button className="mt-8 bg-primary hover:bg-primary/90 text-primary-foreground font-bold px-8 py-6">
               العودة للصفحة الرئيسية
