@@ -188,7 +188,7 @@ const HomePickupFlow = ({ onBack }: { onBack: () => void }) => {
       <div className="rounded-xl bg-secondary/15 border border-secondary/40 p-4 text-sm">
         <p className="font-bold mb-1">⚠️ ملاحظة هامة</p>
         <p className="text-muted-foreground">
-          خدمة الاستلام متوفرة فقط في نطاق 10 كم من ساقية الدائر، بين الساعة 13:00 و 18:00.
+          خدمة الاستلام متوفرة فقط في نطاق 10 كم من ساقية الدائر.
         </p>
       </div>
 
