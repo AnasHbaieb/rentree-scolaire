@@ -164,10 +164,9 @@ const AdminDashboard = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
           <StatCard icon={Coins} label="مجموع التبرعات" value={`${totalFinancial.toLocaleString("ar-TN")} د.ت`} />
           <StatCard icon={Users} label="عدد المساهمين" value={String(totalDonors)} />
-          <StatCard icon={HandHeart} label="طلبات صدقة الأكتاف" value={String(totalShoulders)} />
         </div>
 
         <div className="flex gap-2 mb-4">
