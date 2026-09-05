@@ -227,7 +227,22 @@ const HomePickupFlow = ({ onBack }: { onBack: () => void }) => {
           )}
         </div>
         <div>
+          <Label htmlFor="amount_home">القيمة التقريبية للمساهمة (د.ت) *</Label>
+          <Input
+            id="amount_home"
+            type="number"
+            min={1}
+            step="0.1"
+            dir="ltr"
+            {...form.register("amount", { valueAsNumber: true })}
+          />
+          {form.formState.errors.amount && (
+            <p className="text-destructive text-sm mt-1">{form.formState.errors.amount.message}</p>
+          )}
+        </div>
+        <div>
           <Label htmlFor="gps_location">رابط Google Maps *</Label>
+
           <div className="flex gap-2">
             <Input
               id="gps_location"
