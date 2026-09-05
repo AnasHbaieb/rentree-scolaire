@@ -58,7 +58,7 @@ const HeadquartersFlow = ({ onBack }: { onBack: () => void }) => {
   const [submitting, setSubmitting] = useState(false);
   const form = useForm<HeadquartersForm>({
     resolver: zodResolver(headquartersSchema),
-    defaultValues: { full_name: "", phone: "" },
+    defaultValues: { full_name: "", phone: "", amount: undefined },
   });
 
   const onSubmit = async (values: HeadquartersForm) => {
@@ -68,9 +68,11 @@ const HeadquartersFlow = ({ onBack }: { onBack: () => void }) => {
       project_type: "Adha",
       full_name: values.full_name,
       phone: values.phone,
+      amount: values.amount,
       pickup_required: false,
       pickup_method: "headquarters",
     });
+
     setSubmitting(false);
     if (error) {
       toast.error("صار خطأ، عاود من فضلك");
