@@ -142,7 +142,7 @@ const HomePickupFlow = ({ onBack }: { onBack: () => void }) => {
   const [locating, setLocating] = useState(false);
   const form = useForm<HomePickupForm>({
     resolver: zodResolver(homePickupSchema),
-    defaultValues: { full_name: "", phone: "", gps_location: "" },
+    defaultValues: { full_name: "", phone: "", gps_location: "", amount: undefined },
   });
 
   const detectLocation = () => {
