@@ -21,18 +21,26 @@ export const financialSchema = z.object({
   }),
 });
 
+const estimatedValue = z
+  .number({ invalid_type_error: "أدخل القيمة التقريبية" })
+  .min(1, "القيمة لازم تكون أكثر من 0")
+  .max(100000, "قيمة كبيرة برشة");
+
 export const headquartersSchema = z.object({
   ...baseFields,
+  amount: estimatedValue,
 });
 
 export const homePickupSchema = z.object({
   ...baseFields,
+  amount: estimatedValue,
   gps_location: z
     .string()
     .trim()
     .url("لازم يكون رابط Google Maps صحيح")
     .max(500, "الرابط طويل برشة"),
 });
+
 
 export type FinancialForm = z.infer<typeof financialSchema>;
 export type HeadquartersForm = z.infer<typeof headquartersSchema>;

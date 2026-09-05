@@ -58,7 +58,7 @@ const HeadquartersFlow = ({ onBack }: { onBack: () => void }) => {
   const [submitting, setSubmitting] = useState(false);
   const form = useForm<HeadquartersForm>({
     resolver: zodResolver(headquartersSchema),
-    defaultValues: { full_name: "", phone: "" },
+    defaultValues: { full_name: "", phone: "", amount: undefined },
   });
 
   const onSubmit = async (values: HeadquartersForm) => {
@@ -68,9 +68,11 @@ const HeadquartersFlow = ({ onBack }: { onBack: () => void }) => {
       project_type: "Adha",
       full_name: values.full_name,
       phone: values.phone,
+      amount: values.amount,
       pickup_required: false,
       pickup_method: "headquarters",
     });
+
     setSubmitting(false);
     if (error) {
       toast.error("صار خطأ، عاود من فضلك");
@@ -106,7 +108,22 @@ const HeadquartersFlow = ({ onBack }: { onBack: () => void }) => {
             <p className="text-destructive text-sm mt-1">{form.formState.errors.phone.message}</p>
           )}
         </div>
+        <div>
+          <Label htmlFor="amount">القيمة التقريبية للمساهمة (د.ت) *</Label>
+          <Input
+            id="amount"
+            type="number"
+            min={1}
+            step="0.1"
+            dir="ltr"
+            {...form.register("amount", { valueAsNumber: true })}
+          />
+          {form.formState.errors.amount && (
+            <p className="text-destructive text-sm mt-1">{form.formState.errors.amount.message}</p>
+          )}
+        </div>
       </div>
+
 
       <div className="flex flex-col sm:flex-row gap-3">
         <Button type="button" variant="outline" onClick={onBack}>رجوع</Button>
@@ -125,7 +142,7 @@ const HomePickupFlow = ({ onBack }: { onBack: () => void }) => {
   const [locating, setLocating] = useState(false);
   const form = useForm<HomePickupForm>({
     resolver: zodResolver(homePickupSchema),
-    defaultValues: { full_name: "", phone: "", gps_location: "" },
+    defaultValues: { full_name: "", phone: "", gps_location: "", amount: undefined },
   });
 
   const detectLocation = () => {
@@ -171,6 +188,8 @@ const HomePickupFlow = ({ onBack }: { onBack: () => void }) => {
       project_type: "Adha",
       full_name: values.full_name,
       phone: values.phone,
+      amount: values.amount,
+
       pickup_required: true,
       pickup_method: "home",
       gps_location: values.gps_location,
@@ -208,7 +227,22 @@ const HomePickupFlow = ({ onBack }: { onBack: () => void }) => {
           )}
         </div>
         <div>
+          <Label htmlFor="amount_home">القيمة التقريبية للمساهمة (د.ت) *</Label>
+          <Input
+            id="amount_home"
+            type="number"
+            min={1}
+            step="0.1"
+            dir="ltr"
+            {...form.register("amount", { valueAsNumber: true })}
+          />
+          {form.formState.errors.amount && (
+            <p className="text-destructive text-sm mt-1">{form.formState.errors.amount.message}</p>
+          )}
+        </div>
+        <div>
           <Label htmlFor="gps_location">رابط Google Maps *</Label>
+
           <div className="flex gap-2">
             <Input
               id="gps_location"
