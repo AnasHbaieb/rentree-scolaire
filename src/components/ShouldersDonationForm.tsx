@@ -188,6 +188,8 @@ const HomePickupFlow = ({ onBack }: { onBack: () => void }) => {
       project_type: "Adha",
       full_name: values.full_name,
       phone: values.phone,
+      amount: values.amount,
+
       pickup_required: true,
       pickup_method: "home",
       gps_location: values.gps_location,
