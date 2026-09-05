@@ -108,7 +108,22 @@ const HeadquartersFlow = ({ onBack }: { onBack: () => void }) => {
             <p className="text-destructive text-sm mt-1">{form.formState.errors.phone.message}</p>
           )}
         </div>
+        <div>
+          <Label htmlFor="amount">القيمة التقريبية للمساهمة (د.ت) *</Label>
+          <Input
+            id="amount"
+            type="number"
+            min={1}
+            step="0.1"
+            dir="ltr"
+            {...form.register("amount", { valueAsNumber: true })}
+          />
+          {form.formState.errors.amount && (
+            <p className="text-destructive text-sm mt-1">{form.formState.errors.amount.message}</p>
+          )}
+        </div>
       </div>
+
 
       <div className="flex flex-col sm:flex-row gap-3">
         <Button type="button" variant="outline" onClick={onBack}>رجوع</Button>
