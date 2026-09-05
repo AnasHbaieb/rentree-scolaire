@@ -9,7 +9,7 @@ import {
   Table, TableBody, TableCell, TableHead, TableHeader, TableRow,
 } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
-import { Loader2, LogOut, Download, RefreshCw, Coins, HandHeart, Users, ChevronLeft, ChevronRight } from "lucide-react";
+import { Loader2, LogOut, Download, RefreshCw, Coins, Users, ChevronLeft, ChevronRight } from "lucide-react";
 import { toast } from "sonner";
 
 interface Donation {
@@ -128,7 +128,6 @@ const AdminDashboard = () => {
   const totalFinancial = donations
     .filter((d) => d.track === "financial")
     .reduce((s, d) => s + Number(d.amount ?? 0), 0);
-  const totalShoulders = donations.filter((d) => d.track === "shoulders").length;
   const totalDonors = donations.filter((d) => d.track === "financial").length;
 
   if (!authChecked) {
@@ -164,10 +163,9 @@ const AdminDashboard = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-6">
           <StatCard icon={Coins} label="مجموع التبرعات" value={`${totalFinancial.toLocaleString("ar-TN")} د.ت`} />
           <StatCard icon={Users} label="عدد المساهمين" value={String(totalDonors)} />
-          <StatCard icon={HandHeart} label="طلبات صدقة الأكتاف" value={String(totalShoulders)} />
         </div>
 
         <div className="flex gap-2 mb-4">
