@@ -9,7 +9,7 @@ import {
   Table, TableBody, TableCell, TableHead, TableHeader, TableRow,
 } from "@/components/ui/table";
 import { Badge } from "@/components/ui/badge";
-import { Loader2, LogOut, Download, RefreshCw, Coins, HandHeart, Users, ChevronLeft, ChevronRight } from "lucide-react";
+import { Loader2, LogOut, Download, RefreshCw, Coins, Users, ChevronLeft, ChevronRight } from "lucide-react";
 import { toast } from "sonner";
 
 interface Donation {
