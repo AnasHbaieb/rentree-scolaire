@@ -174,7 +174,7 @@ const AdminDashboard = () => {
           {([
             ["all", "الكل"],
             ["financial", "مالية"],
-            ["shoulders", "أكتاف"],
+            ["shoulders", "عينية"],
           ] as const).map(([k, label]) => (
             <Button
               key={k}
@@ -221,7 +221,7 @@ const AdminDashboard = () => {
                         </TableCell>
                         <TableCell>
                           <Badge variant={d.track === "financial" ? "default" : "secondary"}>
-                            {d.track === "financial" ? "مالية" : "أكتاف"}
+                            {d.track === "financial" ? "مالية" : "عينية"}
                           </Badge>
                         </TableCell>
                         <TableCell className="font-medium">{d.full_name}</TableCell>
