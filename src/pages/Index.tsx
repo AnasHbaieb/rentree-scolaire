@@ -12,7 +12,7 @@ import { supabase } from "@/integrations/supabase/client";
 import heroSchoolAsset from "@/assets/hero-school.jpg.asset.json";
 const heroImage = heroSchoolAsset.url;
 
-const GOAL = 30000;
+const GOAL = 28000;
 
 
 const Index = () => {

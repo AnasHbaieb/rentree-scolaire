@@ -3,7 +3,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { Progress } from "@/components/ui/progress";
 import { Users, Target } from "lucide-react";
 
-const GOAL = 30000;
+const GOAL = 28000;
 
 export const ProgressTracker = () => {
   const [total, setTotal] = useState(0);
