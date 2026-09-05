@@ -128,7 +128,6 @@ const AdminDashboard = () => {
   const totalFinancial = donations
     .filter((d) => d.track === "financial")
     .reduce((s, d) => s + Number(d.amount ?? 0), 0);
-  const totalShoulders = donations.filter((d) => d.track === "shoulders").length;
   const totalDonors = donations.filter((d) => d.track === "financial").length;
 
   if (!authChecked) {
