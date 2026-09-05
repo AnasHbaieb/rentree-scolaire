@@ -57,11 +57,11 @@ const Index = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background hearts-bg">
       <Helmet>
-        <title>أُضْحِيَّتْنَا - حملة التبرع لعيد الأضحى</title>
-        <meta name="description" content="ساهم في مشروع أضحيتنا لعيد الأضحى مع جمعية الكلمة الطيبة بصفاقس - سهم 50د، 100د، صدقة الأكتاف للعائلات المعوزة." />
+        <title>أسهم الأمل - حملة العودة المدرسية</title>
+        <meta name="description" content="ساهم في مشروع أسهم الأمل للعودة المدرسية مع جمعية الكلمة الطيبة بصفاقس - سهم 50د، أدوات مدرسية." />
         <link rel="canonical" href="https://eid-idhha.lovable.app/" />
-        <meta property="og:title" content="أُضْحِيَّتْنَا - حملة التبرع لعيد الأضحى" />
-        <meta property="og:description" content="ساهم في مشروع أضحيتنا مع جمعية الكلمة الطيبة بصفاقس." />
+        <meta property="og:title" content="أسهم الأمل - حملة العودة المدرسية" />
+        <meta property="og:description" content="ساهم في مشروع أسهم الأمل للعودة المدرسية مع جمعية الكلمة الطيبة بصفاقس." />
         <meta property="og:url" content="https://eid-idhha.lovable.app/" />
       </Helmet>
       <InAppBrowserBanner />
@@ -76,7 +76,7 @@ const Index = () => {
               <div className="relative w-full max-w-xl rounded-2xl overflow-hidden shadow-soft">
                 <img
                   src={heroImage}
-                  alt="أضحيتنا - عيد الأضحى"
+                  alt="أسهم الأمل - العودة المدرسية "
                   width={1200}
                   height={800}
                   fetchPriority="high"
