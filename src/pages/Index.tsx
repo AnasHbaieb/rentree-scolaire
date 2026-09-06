@@ -59,10 +59,10 @@ const Index = () => {
       <Helmet>
         <title>أسهم الأمل - حملة العودة المدرسية</title>
         <meta name="description" content="ساهم في مشروع أسهم الأمل للعودة المدرسية مع جمعية الكلمة الطيبة بصفاقس - سهم 50د، أدوات مدرسية." />
-        <link rel="canonical" href="https://eid-idhha.lovable.app/" />
+        <link rel="canonical" href="https://rentree-scolaire.lovable.app/" />
         <meta property="og:title" content="أسهم الأمل - حملة العودة المدرسية" />
         <meta property="og:description" content="ساهم في مشروع أسهم الأمل للعودة المدرسية مع جمعية الكلمة الطيبة بصفاقس." />
-        <meta property="og:url" content="https://eid-idhha.lovable.app/" />
+        <meta property="og:url" content="https://rentree-scolaire.lovable.app/" />
       </Helmet>
       <InAppBrowserBanner />
       <SiteHeader />

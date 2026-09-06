@@ -141,10 +141,10 @@ const AdminDashboard = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Helmet>
-        <title>لوحة الإدارة - أُضْحِيَّتْنَا</title>
-        <meta name="description" content="لوحة إدارة التبرعات وصدقات الأكتاف لحملة أُضْحِيَّتْنَا الخاصة بجمعية الكلمة الطيبة." />
+        <title>لوحة الإدارة - أسهم الأمل</title>
+        <meta name="description" content="لوحة إدارة التبرعات وصدقات الأكتاف لحملة أسهم الأمل الخاصة بجمعية الكلمة الطيبة." />
         <meta name="robots" content="noindex" />
-        <link rel="canonical" href="https://eid-idhha.lovable.app/admin/dashboard" />
+        <link rel="canonical" href="https://rentree-scolaire.lovable.app/admin/dashboard" />
       </Helmet>
       <SiteHeader />
       <main className="flex-1 container mx-auto px-4 py-8">
