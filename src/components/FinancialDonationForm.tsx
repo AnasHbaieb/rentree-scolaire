@@ -37,7 +37,7 @@ export const FinancialDonationForm = ({ onBack }: { onBack: () => void }) => {
     setSubmitting(true);
     const { error } = await supabase.from("donations").insert({
       track: "financial",
-      project_type: "Adha",
+      project_type: "Rentree",
       full_name: values.full_name,
       phone: values.phone,
       amount: values.amount,

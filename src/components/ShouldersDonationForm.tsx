@@ -65,7 +65,7 @@ const HeadquartersFlow = ({ onBack }: { onBack: () => void }) => {
     setSubmitting(true);
     const { error } = await supabase.from("donations").insert({
       track: "shoulders",
-      project_type: "Adha",
+      project_type: "Rentree",
       full_name: values.full_name,
       phone: values.phone,
       amount: values.amount,
@@ -185,7 +185,7 @@ const HomePickupFlow = ({ onBack }: { onBack: () => void }) => {
     setSubmitting(true);
     const { error } = await supabase.from("donations").insert({
       track: "shoulders",
-      project_type: "Adha",
+      project_type: "Rentree",
       full_name: values.full_name,
       phone: values.phone,
       amount: values.amount,

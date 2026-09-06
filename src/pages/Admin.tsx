@@ -71,10 +71,10 @@ const Admin = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Helmet>
-        <title>دخول الإدارة - أُضْحِيَّتْنَا</title>
-        <meta name="description" content="صفحة دخول مخصّصة لفريق إدارة جمعية الكلمة الطيبة لإدارة حملة أُضْحِيَّتْنَا." />
+        <title>دخول الإدارة - أسهم الأمل</title>
+        <meta name="description" content="صفحة دخول مخصّصة لفريق إدارة جمعية الكلمة الطيبة لإدارة حملة أسهم الأمل." />
         <meta name="robots" content="noindex" />
-        <link rel="canonical" href="https://eid-idhha.lovable.app/admin" />
+        <link rel="canonical" href="https://rentree-scolaire.lovable.app/admin" />
       </Helmet>
       <SiteHeader />
       <main className="flex-1 flex items-center justify-center px-4 py-12">

@@ -9,13 +9,13 @@ const Success = () => {
   return (
     <div className="min-h-screen flex flex-col bg-background">
       <Helmet>
-        <title>تمت العملية بنجاح - أُضْحِيَّتْنَا</title>
-        <meta name="description" content="شكراً لمساهمتك في حملة أُضْحِيَّتْنَا. سيتواصل فريق جمعية الكلمة الطيبة معك قريباً لتنسيق الاستلام." />
-        <link rel="canonical" href="https://eid-idhha.lovable.app/success" />
+        <title>تمت العملية بنجاح - أسهم الأمل</title>
+        <meta name="description" content="شكراً لمساهمتك في حملة أسهم الأمل. سيتواصل فريق جمعية الكلمة الطيبة معك قريباً لتنسيق الاستلام." />
+        <link rel="canonical" href="https://rentree-scolaire.lovable.app/success" />
         <meta name="robots" content="noindex" />
-        <meta property="og:title" content="تمت العملية بنجاح - أُضْحِيَّتْنَا" />
-        <meta property="og:description" content="شكراً لمساهمتك في حملة أُضْحِيَّتْنَا." />
-        <meta property="og:url" content="https://eid-idhha.lovable.app/success" />
+        <meta property="og:title" content="تمت العملية بنجاح - أسهم الأمل" />
+        <meta property="og:description" content="شكراً لمساهمتك في حملة أسهم الأمل." />
+        <meta property="og:url" content="https://rentree-scolaire.lovable.app/success" />
       </Helmet>
       <SiteHeader />
       <main className="flex-1 flex items-center justify-center px-4 py-12">
