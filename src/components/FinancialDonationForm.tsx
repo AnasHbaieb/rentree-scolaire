@@ -57,7 +57,7 @@ export const FinancialDonationForm = ({ onBack }: { onBack: () => void }) => {
   return (
     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
       <div>
-        <Label className="text-base font-bold mb-3 block">قَدّ السهم</Label>
+        <Label className="text-base font-bold mb-3 block">قدر السهم</Label>
         <div className="grid grid-cols-3 gap-3">
           {PRESETS.map((val) => (
             <button
