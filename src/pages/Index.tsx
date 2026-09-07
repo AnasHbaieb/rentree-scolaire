@@ -12,7 +12,7 @@ import { supabase } from "@/integrations/supabase/client";
 import heroSchoolAsset from "@/assets/hero-school.jpg.asset.json";
 const heroImage = heroSchoolAsset.url;
 
-const GOAL = 28000;
+const GOAL = 24000;
 
 
 const Index = () => {
@@ -96,7 +96,7 @@ const Index = () => {
               </p>
               <p className="text-base text-foreground/80 leading-relaxed">
                 مع قرب العودة المدرسية، تطلق <span className="font-bold">الجمعية الخيرية الكلمة الطيبة</span> مشروع <span className="font-bold">"أسهم الأمل"</span> باش نوفرو المستلزمات والأدوات المدرسية لصغارنا من العائلات المعوزة.
-                <br />هدفنا: إعانة 280 تلميذاً (قيمة المساعدة الواحدة 100 دينار).
+                <br />هدفنا: إعانة 300 تلميذاً (قيمة المساعدة الواحدة 80 دينار).
                 <br />تبرعك اليوم.. أملهم غداً.
               </p>
 
